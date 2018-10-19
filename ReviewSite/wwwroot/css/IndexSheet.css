@@ -1,0 +1,25 @@
+﻿body {
+    padding-left:5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('../images/corgimail.png');
+    background-position-x: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:auto;
+    background-color:black; 
+}
+h1 {
+    color: steelblue;
+    font-size: 7vw;
+    font-weight: bold;
+    text-shadow: 0 0 2px lightcyan;
+}
+a {
+    color: lightcyan;
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+    text-shadow: -.5px .5px .5px steelblue;    
+}
+a:hover{
+    color:mediumpurple;
+}

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ReviewSite.Models.Review>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/IndexSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <h1 align="left">Corgi Types       
+    </h1>
+
+    @foreach (var review in Model)
+    {
+        <div align="left">
+            <a href="/Review/Details/@review.Id">
+                @review.Title
+            </a>
+        </div>
+    }
+</body>
+</html>

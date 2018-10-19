@@ -1,0 +1,37 @@
+﻿body {
+    background-color:lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+
+}
+h1 {
+    color: steelblue;
+    text-shadow: 2px 1px 2px #000000;
+}
+img {
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
+}
+p {
+    font-style: oblique;
+    font-size: 2px 2vw;
+}
+
+div a {
+    border: groove;
+    padding: 5px;
+    text-decoration: none;
+    color: lightcyan;
+    background-color: lightslategrey;    
+}
+    div a:hover {
+        color: lightslategrey;
+        background-color: lightcyan;
+    }
+
+.category{
+    font-size:x-small;
+}
+#button{float:right;}
+
