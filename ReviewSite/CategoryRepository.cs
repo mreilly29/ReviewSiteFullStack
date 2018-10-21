@@ -4,12 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-
 namespace ReviewSite
 {
-    public class ReviewRepository : Repository<Review>, IReviewRepository
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
-        public ReviewRepository(Context context) : base(context)
+        public CategoryRepository(Context context) : base(context)
         {
             // This ensures our base constructor gets run.
         }

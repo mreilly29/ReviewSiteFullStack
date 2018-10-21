@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ReviewSite.Models.Review>
+﻿
 @{
     Layout = null;
 }
@@ -12,16 +12,12 @@
     <link href="~/css/IndexSheet.css" rel="stylesheet" />
 </head>
 <body>
-    <h1 align="left">Corgi Types       
+    <h1 align="left">
+        Corgi Types
     </h1>
 
-    @foreach (var review in Model)
-    {
-        <div align="left">
-            <a href="/Review/Details/@review.Id">
-                @review.Title
-            </a>
-        </div>
-    }
+    <h2><a href="/Review/AllReviews">All Reviews</a></h2>
+    <h2><a href="http://localhost:50306/Category/AllCategories">All Categories</a></h2>
+
 </body>
 </html>

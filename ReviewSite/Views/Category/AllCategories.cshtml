@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ReviewSite.Models.Category>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AllCategories</title>
+</head>
+<body>
+    <h1 align="left"> Categories </h1>
+
+    @foreach (var category in Model)
+    {
+    <div>
+        <a href="http://localhost:50306/review/category/@category.Id">
+            @category.Name
+        </a>
+        
+    </div>
+    }
+</body>
+</html>

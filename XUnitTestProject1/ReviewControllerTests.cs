@@ -59,7 +59,7 @@ namespace XUnitTestProject1
         public void Details_Sets_Review_To_Model()
         {
             var expectedModel = new Review();
-            reviewRepo.FindById(1).Returns(expectedModel);
+            reviewRepo.GetById(1).Returns(expectedModel);
 
             var result = underTest.Details(1);
 

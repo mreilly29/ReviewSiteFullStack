@@ -23,7 +23,17 @@ namespace ReviewSite.Controllers
 
         public ViewResult Details(int id)
         {
-            var model = reviewRepo.FindById(id);
+            var model = reviewRepo.GetById(id);
+            return View(model);
+        }
+        public ViewResult Category(int catId)
+        {
+            var model = reviewRepo.GetById(catId);
+            return View(model);
+        }
+        public ViewResult AllReviews()
+        {
+            var model = reviewRepo.GetAll();
             return View(model);
         }
     }
