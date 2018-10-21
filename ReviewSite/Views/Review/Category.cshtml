@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<ReviewSite.Models.Review>
+
 @{
     Layout = null;
 }
@@ -8,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>AllReviews</title>
+    <title>Category</title>
     <link href="~/css/DisplayAll.css" rel="stylesheet" />
 </head>
 <body>
@@ -17,14 +18,17 @@
             <span>Home</span>
         </a>
     </div>
-    <h1 align="left">All Reviews</h1>
+
+    <h1>Category</h1>
     <div id="names">
-        @foreach (var review in Model)
+        @foreach (var category in Model)
         {
             <div>
-                <a href="/Review/Details/@review.Id">
-                    @review.Title
+                <a href="http://localhost:50306/review/details/@category.Id">
+                    @category.CategoryId
+                    @category.Title
                 </a>
+
             </div>
         }
     </div>

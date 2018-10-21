@@ -19,12 +19,6 @@ namespace ReviewSite.Controllers
         {
             var model = categoryRepo.GetAll();
             return View(model);
-        }
-        public ViewResult Category(int id)
-        {
-            var model = categoryRepo.GetAll();
-            return View(model);
-        }
-
+        }      
     }
 }

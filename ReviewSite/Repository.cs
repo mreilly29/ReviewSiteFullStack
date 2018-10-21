@@ -9,7 +9,7 @@ namespace ReviewSite
     public class Repository<T>
        where T : class
     {
-        private DbContext db;
+        public DbContext db;
 
         public Repository(DbContext db)
         {
@@ -49,6 +49,6 @@ namespace ReviewSite
         public IEnumerable<T> GetAll()
         {
             return db.Set<T>().ToList();
-        }
+        }       
     }
 }
