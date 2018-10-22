@@ -12,13 +12,18 @@
     <link href="~/css/DisplayAll.css" rel="stylesheet" />
 </head>
 <body>
+    <div id="back-btn">
+        <a href="/" class="button" style="vertical-align:middle">
+            <span>Home</span>
+        </a>
+    </div>
     <h1>@Model.Name</h1>
     <div id="names">
-    @foreach (var review in Model.Reviews)
-    {
+        @foreach (var review in Model.Reviews)
+        {
 
-        <p><a href="http://localhost:50306/Review/Details/@review.Id">@review.Title</a></p>
-    }
+            <p><a href="http://localhost:50306/Review/Details/@review.Id">@review.Title</a></p>
+        }
     </div>
 
 </body>
