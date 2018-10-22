@@ -1,0 +1,25 @@
+﻿@model ReviewSite.Models.Category
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link href="~/css/DisplayAll.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>@Model.Name</h1>
+    <div id="names">
+    @foreach (var review in Model.Reviews)
+    {
+
+        <p><a href="http://localhost:50306/Review/Details/@review.Id">@review.Title</a></p>
+    }
+    </div>
+
+</body>
+</html>

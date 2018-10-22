@@ -25,12 +25,7 @@ namespace ReviewSite.Controllers
         {
             var model = reviewRepo.GetById(id);
             return View(model);
-        }
-        public ViewResult Category(int id)
-        {
-            var model = reviewRepo.GetAll();
-            return View(model);
-        }
+        }        
         public ViewResult AllReviews()
         {
             var model = reviewRepo.GetAll();

@@ -23,6 +23,7 @@ p {
 }
 #back-btn {
     display: flex;
+    justify-content:flex-end;
 }
 
 .button {
