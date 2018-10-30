@@ -10,13 +10,9 @@
     <meta name="viewport" content="width=device-width" />
     <title>AllReviews</title>
     <link href="~/css/DisplayAll.css" rel="stylesheet" />
+    <link href="~/css/nav.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="back-btn">
-        <a href="/" class="button" style="vertical-align:middle">
-            <span>Home</span>
-        </a>
-    </div>
     <h1 align="left">All Reviews</h1>
     <div id="names">
         @foreach (var review in Model)
@@ -28,5 +24,11 @@
             </div>
         }
     </div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/review/allreviews/">All Reviews</a>
+        <a href="/category/index/">All Categories</a>
+    </nav>
+    <script src="~/JavaScript/Script.js"></script>
 </body>
 </html>

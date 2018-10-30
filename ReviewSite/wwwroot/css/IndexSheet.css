@@ -1,25 +1,32 @@
 ﻿body {
-    padding-left:5vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FFFFD6;
+}
+#header {
     background-image: url('../images/corgimail.png');
-    background-position-x: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size:auto;
-    background-color:black; 
+    background-size:contain;    
+    background-color: black;
+    height:5rem;
+    margin-top:3.2rem;
+    padding:3rem;
+    width:100%;
 }
 h1 {
-    color: steelblue;
-    font-size: 7vw;
+    color: #48271E;
+    font-size:50px;
     font-weight: bold;
-    text-shadow: 0 0 2px lightcyan;
+    text-shadow: 1px 1px 2px #271214;
 }
-a {
-    color: lightcyan;
+h2, h1 {
+    display: flex;
+    justify-content: center;
+}
+div a {
+    color: #77422C;
     text-decoration: none;
-    font-size: 3vw;
     font-weight: bold;
-    text-shadow: -.5px .5px .5px steelblue;    
+    text-shadow: -.5px .5px .5px #271214;
 }
-a:hover{
-    color:darkblue;
-}
+    div a:hover {
+        color: #B5754B;
+    }
